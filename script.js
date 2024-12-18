@@ -65,7 +65,7 @@ pullButton.addEventListener("click",async ()=>{
   repoDetails.forEach((each)=>{
   let repoBox=document.createElement("a") 
   console.log(each.html_url)   
-  repoBox.setAttribute("src",each.html_url)
+  repoBox.setAttribute("href",each.html_url)
   repoBox.classList.add("repoBox")
   repoBox.innerText=each.name
   userDetailsArea.appendChild(repoBox)
